@@ -21,4 +21,11 @@ func main() {
 		product.GetAll()
 	}
 
+	println("------ Get By ID ------")
+	idToSearch := 2 //Es la manzana
+	productSearch := ejercicio1.GetById(idToSearch)
+
+	productSearch.GetAll()
+
+	println("----------- Ejercicio 2 -----------")
 }

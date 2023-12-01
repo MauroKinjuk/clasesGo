@@ -39,7 +39,13 @@ func (p Product) GetAll() {
 	fmt.Printf("ID: %d, Name: %s, Price: %2.f, Description: %s, Category: %s \n", p.ID, p.Name, p.Price, p.Description, p.Category)
 }
 
-func getById(id int) Product {
+func GetById(id int) Product {
+
+	for _, product := range Products {
+		if id == product.ID {
+			return product
+		}
+	}
 
 	return Product{}
 }
