@@ -16,6 +16,8 @@ gestión de los empleados.
 
 package ejercicio2
 
+import "fmt"
+
 type Person struct {
 	ID          int
 	Name        string
@@ -25,5 +27,11 @@ type Person struct {
 type Employee struct {
 	ID       int
 	Position string
-	person   Person
+	Person   //Se hace solo Person (y no Person Person), ya que empleado no existiria sin una persona
+}
+
+var Persons = []Person
+
+func (e Employee) PrintEmployee() {
+	fmt.Printf("ID: %d, Position: %s", e.ID, e.Position)
 }
