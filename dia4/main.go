@@ -26,7 +26,7 @@ func main() {
 	/*-------------- Ejercicio 2 --------------*/
 	fmt.Println("Ejercicio 2")
 
-	var salary2 int = 9000
+	salary2 := 9000
 
 	err2 := ejercicio2.CheckSalary(salary2)
 
@@ -38,7 +38,7 @@ func main() {
 	/*-------------- Ejercicio 3 --------------*/
 	fmt.Println("Ejercicio 3")
 
-	var salary3 int = 9000
+	salary3 := 9000
 
 	err3 := ejercicio3.CheckSalary(salary3)
 
@@ -49,7 +49,7 @@ func main() {
 	/*-------------- Ejercicio 4 --------------*/
 	fmt.Println("Ejercicio 4")
 
-	var salary4 int = 9000
+	salary4 := 9000
 
 	err4 := ejercicio4.CheckSalary(salary4)
 
