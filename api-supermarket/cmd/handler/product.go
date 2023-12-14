@@ -79,7 +79,7 @@ func (r *ProductRouter) Create() gin.HandlerFunc {
 			return
 		}
 
-		createdProduct := r.service.Create(body)
+		createdProduct, err := r.service.Create(body)
 		if err != nil {
 			ctx.JSON(http.StatusBadRequest, gin.H{
 				"message": "error creating product",
