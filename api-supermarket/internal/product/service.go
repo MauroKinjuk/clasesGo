@@ -18,6 +18,6 @@ func (s ProductService) GetById(id int64) domain.Product {
 	return s.repository.GetById(id)
 }
 
-func (s ProductService) Create(product domain.ProductCreate) domain.Product {
+func (s *ProductService) Create(product domain.ProductCreate) domain.Product {
 	return s.repository.Create(product)
 }
